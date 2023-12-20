@@ -1,24 +1,33 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #dcdcdc; /* Grayish background */
+    background-image: url('path/to/your-texture.jpg'); /* Add your own texture image */
+    background-repeat: repeat;
 }
 
 .container {
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
-input {
-    padding: 8px;
+input, button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 16px;
 }
 
 button {
-    padding: 8px;
+    background-color: #6b4e37; /* Brownish color for a cafe look */
+    color: #fff;
     cursor: pointer;
 }
 
@@ -29,8 +38,14 @@ ul {
 
 li {
     margin: 8px 0;
-    padding: 8px;
+    padding: 12px;
     background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
+
+li:hover {
+    transform: scale(1.02);
+}
+
